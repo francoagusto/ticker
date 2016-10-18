@@ -1,0 +1,30 @@
+{
+  "name": "ticker",
+  "version": "0.0.1",
+  "description": "",
+  "main": "ticker.js",
+  "types": "ticker.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tick",
+    "clock",
+    "RAF"
+  ],
+  "author": "Franco Barletta",
+  "license": "MIT",
+  "devDependencies": {
+    "bower-webpack-plugin": "^0.1.9",
+    "npm-install-webpack-plugin": "^4.0.4",
+    "tsd": "^0.6.5",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "ifvisible.js": "^1.0.6",
+    "js-signals": "^1.0.0",
+    "typescript-collections": "^1.2.3"
+  }
+}
