@@ -1,7 +1,7 @@
 {
-  "name": "ticker",
+  "name": "ts-ticker",
   "version": "0.0.1",
-  "description": "",
+  "description": "TickManger for switching between RAF and setTimeout for render",
   "main": "ticker.js",
   "types": "ticker.d.ts",
   "scripts": {
@@ -9,8 +9,10 @@
   },
   "keywords": [
     "tick",
+    "ticker",
     "clock",
-    "RAF"
+    "RAF",
+    "idle"
   ],
   "author": "Franco Barletta",
   "license": "MIT",
