@@ -16,7 +16,7 @@ export class TickManager {
 
     private strategyCheckMap: Dictionary<()=>boolean, ITickStrategy> = new Dictionary<()=>boolean, ITickStrategy>();
 
-    private static CHANGE_EVENTS: Array<string> = ["blur", "focus", "idle", "wakeup"];
+    private static CHANGE_EVENTS: Array<string> = ["blur", "focus", "wakeup"];
 
     constructor(private fps: number = 60) {
         this._onUpdate = new Signal();
