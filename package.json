@@ -1,6 +1,6 @@
 {
   "name": "ts-ticker",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "TickManger for switching between RAF and setTimeout for render",
   "main": "./dist/TickManager.js",
   "typings": "./dist/TickManager.d.ts",
@@ -23,13 +23,12 @@
   "devDependencies": {
     "bower-webpack-plugin": "^0.1.9",
     "npm-install-webpack-plugin": "^4.0.4",
-    "tsd": "^0.6.5",
     "typescript": "^2.0.3",
     "typings": "^1.4.0",
     "webpack": "^1.13.2"
   },
   "dependencies": {
-    "ifvisible.js": "^1.0.6",
+    "ifvisible": "^1.1.0",
     "signals": "^1.0.0",
     "typescript-collections": "^1.2.3"
   }
