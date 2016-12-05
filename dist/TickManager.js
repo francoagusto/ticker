@@ -67,8 +67,8 @@ define(["require", "exports", "./strategies/RAFTicker", "./strategies/SetTimeout
                 this.paused = true;
             }
         };
-        TickManager.CHANGE_EVENTS = ["blur", "focus", "idle", "wakeup"];
         return TickManager;
     }());
     exports.TickManager = TickManager;
+    TickManager.CHANGE_EVENTS = ["blur", "focus", "wakeup"];
 });

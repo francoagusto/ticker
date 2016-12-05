@@ -8,9 +8,10 @@ define(["require", "exports", "./AbstractTicker"], function (require, exports, A
     var RAFTicker = (function (_super) {
         __extends(RAFTicker, _super);
         function RAFTicker(update, fps) {
-            _super.call(this, update, fps);
-            this.requestAnimationFrameId = -1;
-            this.updateBinded = this.updateHandler.bind(this);
+            var _this = _super.call(this, update, fps) || this;
+            _this.requestAnimationFrameId = -1;
+            _this.updateBinded = _this.updateHandler.bind(_this);
+            return _this;
         }
         RAFTicker.prototype.isRunning = function () {
             return this.requestAnimationFrameId >= 0;

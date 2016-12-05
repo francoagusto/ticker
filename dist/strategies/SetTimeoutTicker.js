@@ -8,8 +8,9 @@ define(["require", "exports", "./AbstractTicker"], function (require, exports, A
     var SetTimeoutTicker = (function (_super) {
         __extends(SetTimeoutTicker, _super);
         function SetTimeoutTicker(update, fps) {
-            _super.call(this, update, fps);
-            this.intervalId = -1;
+            var _this = _super.call(this, update, fps) || this;
+            _this.intervalId = -1;
+            return _this;
         }
         SetTimeoutTicker.prototype.execute = function () {
             console.log("SetTimeoutTicker.execute");

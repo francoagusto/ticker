@@ -13,8 +13,8 @@ define(["require", "exports"], function (require, exports) {
             this.lastTime = currentTime;
             this.update.dispatch(elapsedMS);
         };
-        AbstractTicker.FPS_TO_MS_NUM = 1000;
         return AbstractTicker;
     }());
     exports.AbstractTicker = AbstractTicker;
+    AbstractTicker.FPS_TO_MS_NUM = 1000;
 });
