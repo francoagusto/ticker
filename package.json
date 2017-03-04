@@ -1,6 +1,6 @@
 {
   "name": "ts-ticker",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "TickManger for switching between RAF and setTimeout for render",
   "main": "./dist/TickManager.js",
   "typings": "./dist/TickManager.d.ts",
@@ -12,7 +12,12 @@
     "ticker",
     "clock",
     "RAF",
-    "idle"
+    "idle",
+    "FPS",
+    "requestAnimationFrame",
+    "setInterval",
+    "render",
+    "pixi.js"
   ],
   "repository": {
     "type": "git",
