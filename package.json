@@ -1,7 +1,7 @@
 {
   "name": "ts-ticker",
   "version": "0.0.6",
-  "description": "TickManger for switching between RAF and setTimeout for render",
+  "description": "ts-ticker is a library that controls and switch behavior  between RAF and setTimeout for update renders clock.",
   "main": "./dist/TickManager.js",
   "typings": "./dist/TickManager.d.ts",
   "scripts": {
@@ -17,6 +17,7 @@
     "requestAnimationFrame",
     "setInterval",
     "render",
+    "update",
     "pixi.js"
   ],
   "repository": {
