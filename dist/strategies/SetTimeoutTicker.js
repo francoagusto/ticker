@@ -14,8 +14,8 @@ define(["require", "exports", "./AbstractTicker"], function (require, exports, A
         }
         SetTimeoutTicker.prototype.execute = function () {
             console.log("SetTimeoutTicker.execute");
-            var itervalTime = AbstractTicker_1.AbstractTicker.FPS_TO_MS_NUM / this.fps;
-            this.intervalId = setInterval(this.intervalCallback.bind(this), itervalTime);
+            var intervalTime = AbstractTicker_1.AbstractTicker.FPS_TO_MS_NUM / this.fps;
+            this.intervalId = setInterval(this.intervalCallback.bind(this), intervalTime);
         };
         SetTimeoutTicker.prototype.cancel = function () {
             console.log("SetTimeoutTicker.cancel");
