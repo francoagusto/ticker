@@ -17,8 +17,8 @@ export class SetTimeoutTicker extends AbstractTicker implements ITickStrategy {
     execute():void {
         console.log("SetTimeoutTicker.execute");
 
-        var itervalTime:number = AbstractTicker.FPS_TO_MS_NUM / this.fps;
-        this.intervalId = setInterval(this.intervalCallback.bind(this), itervalTime);
+        var intervalTime:number = AbstractTicker.FPS_TO_MS_NUM / this.fps;
+        this.intervalId = setInterval(this.intervalCallback.bind(this), intervalTime);
     }
 
     cancel():void {
